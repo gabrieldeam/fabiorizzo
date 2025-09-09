@@ -1,0 +1,54 @@
+/* app/blog/[slug]/Post.module.css */
+
+.post {
+  padding: 80px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: calc(100vh - 120px);
+}
+
+.postTitle {
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.postDate {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.postImage {
+  width: 100%;
+  max-height: 300px;
+  margin: 0 auto 30px;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+
+}
+
+.postContent {
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .post {
+    padding: 20px;
+  }
+
+  .postTitle {
+    font-size: 28px;
+  }
+
+  .postContent {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,159 @@
+.header {
+    background-color: #2F484F;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(48, 48, 48, 0.356);
+    z-index: 3;
+    position: relative;
+}
+
+.navlogolink {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.logo {
+    width: 247px;
+    height: 76px;
+}
+
+.desktopNav {
+    display: flex;
+}
+
+.navList {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.navItem a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.buttonsDesktop {
+    display: flex;
+}
+
+.contactButton {
+    background-color: #6FBCB3;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    border-radius: 12px;
+    margin-right: 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contactButton:hover {
+    background-color: #275f59;
+}
+
+.whatsAppButton {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 12px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.whatsAppButton:hover {
+    background-color: #1db655;
+}
+
+.whatsAppIcon {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: 30px;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger svg {
+    width: 30px;
+    height: 30px;
+    fill: #FFFFFF;
+}
+
+/* Mobile Menu */
+.mobileMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #2F484F;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(48, 48, 48, 0.356);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobileNavList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mobileNavItem a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobileButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 20px;
+    }
+
+    .logo {
+        width: 182px;
+        height: 56px;
+    }
+
+    .navlogolink {
+        gap: 20px;
+    }
+
+    .desktopNav {
+        display: none;
+    }
+
+    .buttonsDesktop {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .contactButton {
+        margin-right: 0;
+    }
+    
+}

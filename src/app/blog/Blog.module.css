@@ -1,0 +1,106 @@
+/* app/blog/Blog.module.css */
+
+.blogSection {
+  padding: 80px;
+  background-color: #ffffff;
+  color: #101E21;
+  text-align: center;
+  min-height: calc(100vh - 120px);
+}
+
+.blogSection h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.postList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.postItem {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.postItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.postLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.postImage {
+  width: 100%;
+  height: 50%; /* Ajuste a altura conforme necessário */
+  object-fit: cover;
+}
+
+.postContent {
+  padding: 20px;
+}
+
+.postDate {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.postTitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2F484F;
+  margin-bottom: 10px;
+}
+
+.postDescription {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Limita a exibição a 3 linhas */
+  -webkit-box-orient: vertical;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .blogSection {
+    padding: 20px;
+  }
+
+  .blogSection h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .postTitle {
+    font-size: 20px;
+  }
+
+  .postDescription {
+    font-size: 14px;
+  }
+
+  .postDate {
+    font-size: 12px;
+  }
+}

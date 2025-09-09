@@ -1,0 +1,140 @@
+/* AboutSection.module.css */
+
+.aboutSection {
+  background-color: #2F484F;
+  padding: 80px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease-out forwards;
+  /* Inicialmente oculto para a animação */
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.image {
+  width: 350px;
+  height: auto;
+  border-radius: 12px;
+  animation: slideInLeft 1s ease-out forwards;
+  /* Inicialmente oculto para a animação */
+  opacity: 0;
+}
+
+.textContainer {
+  margin-left: 60px;
+  text-align: left; /* Garante o alinhamento à esquerda do texto */
+  animation: slideInRight 1s ease-out forwards;
+  /* Inicialmente oculto para a animação */
+  opacity: 0;
+}
+
+.textContainer h2 {
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+.textContainer h3 {
+  color: #6FBCB3;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.textContainer p:first-of-type {
+  color: #FBEECD;
+  font-size: 30px;
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+.textContainer p {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 40px 20px;
+    display: block; /* Define a seção como bloco para alinhar os elementos verticalmente */
+    animation: fadeIn 1.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  .contentContainer {
+    display: block; /* Alinha o conteúdo verticalmente */
+    text-align: center;
+  }
+
+  .image {
+    width: 250px;
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona margem inferior */
+    animation: slideInLeft 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  .textContainer {
+    margin-left: 0;
+    text-align: center; /* Centraliza o texto */
+    animation: slideInRight 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  .textContainer h2 {
+    font-size: 22px;
+  }
+
+  .textContainer h3 {
+    font-size: 40px;
+  }
+
+  .textContainer p:first-of-type {
+    font-size: 18px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .textContainer p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}

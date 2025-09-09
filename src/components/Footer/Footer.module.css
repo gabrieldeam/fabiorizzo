@@ -1,0 +1,25 @@
+/* Footer.module.css */
+
+.footer {
+    background-color: #101E21;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footerText {
+    font-size: 14px;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .socialIcon {
+    width: 24px;
+    height: 24px;
+  }
+  

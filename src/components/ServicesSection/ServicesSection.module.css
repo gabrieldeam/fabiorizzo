@@ -1,0 +1,145 @@
+.servicesSection {
+  background-color: #6FBCB3;
+  padding: 50px 80px;
+  text-align: center;
+}
+
+.title {
+  color: #2F484F;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.serviceBox {
+  padding: 20px;
+  background-color: #2F484F;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  /* Adicionando transições para transform e box-shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estado de hover para .serviceBox */
+.serviceBox:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+.serviceTitle {
+  font-size: 18px;
+  color: #FBEECD; /* Cor do título */
+  margin-bottom: 10px;
+}
+
+.serviceDescription {
+  font-size: 18px;
+  color: white; /* Cor do texto */
+}
+
+.buttonsDesktop {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contactButton {
+  background-color: #2F484F;
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  border-radius: 12px;
+  margin-right: 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+  background-color: #275f59;
+}
+
+.whatsAppButton {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.whatsAppButton:hover {
+  background-color: #1db655;
+}
+
+.whatsAppIcon {
+  width: 30px; /* Ajuste o tamanho conforme necessário */
+  height: 30px;
+}
+
+/* Versão Responsiva para Dispositivos Móveis */
+@media (max-width: 768px) {
+  .servicesSection {
+    padding: 40px 20px;
+    text-align: left; /* Alinha o conteúdo à esquerda no mobile */
+  }
+
+  .title {
+    font-size: 28px;
+    justify-content: flex-start; /* Alinha o título e ícone à esquerda */
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr; 
+    gap: 8px;
+  }
+
+  .serviceBox {
+    text-align: left; /* Texto alinhado à esquerda */
+  }
+
+  .serviceTitle {
+    font-size: 16px;
+  }
+
+  .serviceDescription {
+    font-size: 12px;
+  }
+
+  .buttonsDesktop {
+    display: block;
+  }
+
+  .contactButton,
+  .whatsAppButton {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .whatsAppButton {
+    justify-content: center; /* Mantém o conteúdo do botão centralizado */
+  }
+}
